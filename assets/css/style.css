@@ -1,0 +1,60 @@
+@import url(fontiran.css);
+* {
+    font-family: "Peyda" !important;
+}
+
+
+.in-fa{
+    font-family: 'IRANSansXFaNum';
+}
+
+:root {
+   --primary-purple: #6D58E2;
+   --dark-purple: #303385;
+   --medium-purple: #6053C0;
+   --light-purple: #9687F0;
+   --ultra-light-purple: #A093F5;
+   --primary-lime: #D5E616;
+   --light-lime: #E1F015;
+   --medium-lime: #D3E83F;
+   --dark-navy: #11113C;
+   --deep-navy: #0A0C29;
+   --white: #FFFFFF;
+   --main-bg: #F9FAFC;
+   --light-bg: #F8F9FB;
+   --border-color: #E7E6EC;
+   --primary-text-color: #313042;
+   --secondary-text-color: #6F6F87;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+.btn-ripple {
+    position: relative;
+    /* overflow: hidden; */
+}
+.btn-ripple::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: var(--primary-purple);
+    transform: translate(-50%, -50%);
+    transition: width 2s, height 0.1s;
+}
+.btn-ripple:hover::after {
+    width: 65px;
+    height: 3px;
+}
+.labal_1:hover .labal_1-1{
+    /* opacity: 100%; */
+    visibility: visible;
+    max-height: 300px;
+}
+.labal_2:hover .labal_1-2{
+    visibility: visible;
+    max-height: 300px;
+}
